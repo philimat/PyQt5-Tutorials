@@ -7,16 +7,16 @@ class Window(QMainWindow):
     def __init__(self):
         super().__init__()
 
-        self.title = "PyQt5 Events And Signals"
-        self.top = 500
-        self.left = 200
-        self.width = 300
-        self.height = 250
-        iconName = "home.png"
+        title = "PyQt5 Events And Signals"
+        top = 500
+        left = 200
+        width = 300
+        height = 250
+        iconName = "./icons/home.png"
 
-        self.setWindowTitle(self.title)
+        self.setWindowTitle(title)
         self.setWindowIcon(QtGui.QIcon(iconName))
-        self.setGeometry(self.left, self.top, self.width, self.height)
+        self.setGeometry(left, top, width, height)
 
         self.CreateButton()
         self.show()
@@ -25,7 +25,7 @@ class Window(QMainWindow):
         button = QPushButton("Close Application", self)
         # button.move(50,50)
         button.setGeometry(QRect(100, 100, 150, 50))
-        button.setIcon(QtGui.QIcon("home.png"))
+        button.setIcon(QtGui.QIcon("./icons/home.png"))
         button.setIconSize(QtCore.QSize(40,40))
         button.clicked.connect(self.ClickMe)
 

@@ -13,7 +13,7 @@ class Window(QDialog):
         self.left = 200
         self.width = 400
         self.height = 100
-        self.iconName = "home.png"
+        self.iconName = "./icons/home.png"
 
         self.InitWindow()
 
@@ -34,19 +34,19 @@ class Window(QDialog):
         hboxlayout = QHBoxLayout()
 
         button1 = QPushButton("Football", self)
-        button1.setIcon(QtGui.QIcon("football.png"))
+        button1.setIcon(QtGui.QIcon("./icons/football.png"))
         button1.setIconSize(QtCore.QSize(40,40))
         button1.setMinimumHeight(40)
         hboxlayout.addWidget(button1)
 
         button2 = QPushButton("Cricket", self)
-        button2.setIcon(QtGui.QIcon("cricket.png"))
+        button2.setIcon(QtGui.QIcon("./icons/cricket.png"))
         button2.setIconSize(QtCore.QSize(40,40))
         button2.setMinimumHeight(40)
         hboxlayout.addWidget(button2)
 
         button3 = QPushButton("Tennis", self)
-        button3.setIcon(QtGui.QIcon("tennis.png"))
+        button3.setIcon(QtGui.QIcon("./icons/tennis.png"))
         button3.setIconSize(QtCore.QSize(40,40))
         button3.setMinimumHeight(40)
         hboxlayout.addWidget(button3)
