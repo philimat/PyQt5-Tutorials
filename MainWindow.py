@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Jul 22 13:32:42 2019
-
-@author: A4T5GZZ
-"""
 import sys
 from PyQt5.QtWidgets import QMainWindow, QApplication
 from PyQt5 import QtGui
